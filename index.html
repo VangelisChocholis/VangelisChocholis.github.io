@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/my_favicon3.png" type="image/png" sizes="64x64">
+    <script src="https://kit.fontawesome.com/31cf3bdefe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+          <img src="" class="logo">  
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi, I'm <span>Vangelis Chocholis</span> </h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------About Me-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user_me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me </h1>
+                <p> 
+                 I am an ambitious physicist with a strong passion for data analysis
+                 and an unwavering drive to pursue a career as a data analyst.
+                 With a strong mathematical background, I have developed a deep understanding of
+                 mathematical modeling, statistical analysis, and problem-solving. These skills are directly
+                 applicable to the field of data science, enabling me to approach complex datasets with a unique
+                 perspective and a rigorous analytical mindset. I am excited to apply my skills, knowledge, and passion
+                 to contribute to your organization's data-driven success and make a significant difference through the power of analytics.
+                 <br>
+                 <br>Thank you for visiting my webpage, and I look forward to connecting with you to explore potential opportunities where
+                 my skills and passion for leveraging data can make a meaningful impact.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>MSc in Theoretical & Mathematical Physics</span><br> University of Crete, 2019 - 2020</li>
+                        <li><span>BSc in Physics</span><br> University of Crete, 2014 - 2019</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Streamlit, Scikit-Learn, statsmodels, Keras </li>
+                        <li><span>SQL</span></li>
+                        <li><span>Microsoft Excel</span><br>Including Power Query and Power Pivot</li>
+                        <li><span>Power BI</span></li>
+                        <li><span>Strong Mathematical Background in Machine Learning</span><br>Regression, SVM, PCA and many more</li>
+                    </ul>
+                </div>
+
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Teaching Professional of Statistics</span><br>IEK DELTA 360, Kalamata Oct. 2022 - Current</li>
+                        <li><span>Teacher of Physics, Math and Chemistry</span><br>Secondary education tutoring center, Sep. 2021 - May. 2023</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- --------My Work----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/pink_floyd_img2.png">
+                <div class="layer">
+                    <h3>Pink Floyd Interactive Dashboard</h3>
+                    <p>Interactive Dashboard for Pink Floyd Tracks & Albums</p>
+                    <a href="https://vangelischocholis-pink-floyd-da-pink-floyd-streamlit-app-7gqao1.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/VangelisChocholis/pink_floyd_dashboard.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Online Purchases Data Insights</h3>
+                    <p>Invastigating performance metrics for different user segments</p>
+                    <a href="extracting_insights_html_notebook.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/VangelisChocholis/Online_Purchaces_Insights.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- ------------Contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>vangelischocholis@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+30 6981691087</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vangelis-chocholis" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/VangelisChocholis" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/CV_Evangelos_Chocholis.pdf" class="btn btn2" target="_blank">My CV</a>
+            </div>
+<!-- ----- send messages
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>   ---  -->
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>   
+    </div>
+</div>
+
+
+
+<script>
+        
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
