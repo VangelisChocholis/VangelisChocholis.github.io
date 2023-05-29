@@ -339,3 +339,15 @@ nav .fas{
 	}
 }
 
+.copyright p{
+	font-size: 14px;
+}
+.copyright a {
+	color: #fff; 
+	text-decoration: none; 
+	font-weight: bold; 
+    }
+
+.copyright a:hover {
+	color: #ff004f; 
+    }
