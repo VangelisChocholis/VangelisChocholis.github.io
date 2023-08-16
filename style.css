@@ -133,6 +133,11 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
 	display: block;
 }
+.custom-link {
+  color: #b54769; /* Change this to the desired text color */
+  text-decoration: none; /* Remove underline */
+}
+
 /*------------MyWork----------- */
 #portfolio{
 	padding: 50px 0;
